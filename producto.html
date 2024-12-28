@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+
+    <link rel="stylesheet" href="./style/nav_style.css">
+    <link rel="stylesheet" href="./style/tarjeta.css">
+    <link rel="stylesheet" href="./style/carrito.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="table-desktops">
+                <ul>
+                    <a href="index.html">Inicio</a>
+                    <a href="#">Prodcuto</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a class="ingreso"><button onclick="document.getElementById('id01').style.display='block'"
+                            class="ingresobtn">Ingreso</button></a>
+                </ul>
+
+            </div>
+
+            <div class="mobile">
+                <div id="myNav" class="menuDesple">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="menuDesple-content">
+                        <a href="index.html">Inicio</a>
+                        <a href="#">Producto</a>
+                        <a href="contacto.html">Contacto</a>
+                        <a class="ingreso"><button onclick="document.getElementById('id01').style.display='block'"
+                                class="ingresobtn">Ingreso</button></a>
+                    </div>
+                </div>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776</span>
+            </div>
+        </nav>
+
+        <div id="id01" class="modal">
+
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+                    <img src="https://avatar.iran.liara.run/public" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container_login">
+                    <label for="uname"><b>Usuario</b></label>
+                    <input type="text" placeholder="Enter Usuario" name="uname" required>
+
+                    <label for="psw"><b>Contraseña</b></label>
+                    <input type="password" placeholder="Enter Contraseña" name="psw" required>
+
+                    <button type="submit">Ingreso</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Recordarme
+                    </label>
+                </div>
+
+                <div class="container_login_btn">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn">Cancel</button>
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="registrolbtn">Registrarse</button>
+                    <span class="psw">Olvido su <a href="#">Contraeña?</a></span>
+                </div>
+            </form>
+        </div>
+        <div class="carrito-pedido-compra">
+            <a class="boton-menu boton-carrito" href="./carrito.html">
+                <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class="numerito">0</span>
+            </a>
+        </div>
+
+    </header>
+
+    <main>
+        <h2 class="titulo-principal" id="titulo-principal"></h2>
+        <div id="contenedor-productos" class="contenedor-productos">
+            <!-- Esto se va a rellenar con JS-->
+        </div>
+      
+      
+    </main>
+    <footer class="grid-footer">
+        <div class="footer-menu-logo">
+            <a href="index.html"><img src="../img/logo/logo-letra-blanca.png" alt="logo trabajos en madera"></a>
+        </div>
+        <div class="footer-menu-opciones">
+            <a href="index.html" class="menu-footer-item">INICIO</a>
+            <a href="#" class="menu-footer-item">PRODUCTOS</a>
+            <a href="contacto.html" class="menu-footer-item">CONTACTO</a>
+        </div>
+        </div>
+        <div class="derechos-autor">
+            <h6> All rights reserved &copy; 2024 Company Luis Godoy.</h6>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/productos.js"></script>
+    <script src="./js/nav_script.js"></script>
+    <script src="./js/carrito.js"></script>
+</body>
+
+</html>

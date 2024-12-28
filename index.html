@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+
+    <link rel="stylesheet" href="./style/nav_style.css">
+    <link rel="stylesheet" href="./style/tarjeta.css">
+    <link rel="stylesheet" href="./style/carrito.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Carlos Trabajo en Mardea">
+    <meta property="og:description" content="Diseñamos y creamos productos versátiles en todo tipo de madera.">
+    <meta property="og:image" content="./img/logo/1.jpg">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:type" content="website">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="table-desktops">
+                <ul>
+                    <a href="#">Inicio</a>
+                    <a href="producto.html">Prodcuto</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a class="ingreso"><button onclick="document.getElementById('id01').style.display='block'"
+                            class="ingresobtn">Ingreso</button></a>
+                </ul>
+            </div>
+
+            <div class="mobile">
+                <div id="myNav" class="menuDesple">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="menuDesple-content">
+                        <a href="#">Inicio</a>
+                        <a href="producto.html">Producto</a>
+                        <a href="contacto.html">Contacto</a>
+                        <a class="ingreso"><button onclick="document.getElementById('id01').style.display='block'"
+                                class="ingresobtn">Ingreso</button></a>
+                    </div>
+                </div>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776</span>
+            </div>
+        </nav>
+        <div id="id01" class="modal">
+
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+                    <img src="https://avatar.iran.liara.run/public" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container_login">
+                    <form>
+                        <fieldset>
+                            <label for="uname"><b>Usuario</b></label>
+                            <input type="text" id="txt" placeholder="Usuario" required>
+                            <hr>
+                            <label for="psw"><b>Contraseña</b></label>
+                            <input type="password" id="txtPassword" placeholder="password" required>
+                            <hr>
+                            <button type="button" onclick="login()">
+                                ingreso
+                            </button>
+                            <div class="container_login_btn">
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                    class="cancelbtn">Cancel</button>
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                    class="registrolbtn">Registrarse</button>
+                                <span class="psw">Olvido su <a href="#">Contraeña?</a></span>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </form>
+        </div>
+
+        <div class="carrito-pedido-compra">
+            <a class="boton-menu boton-carrito" href="./carrito.html">
+                <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class="numerito">0</span>
+            </a>
+            <a class="boton-menu boton-carrito">
+                <i class="bi-star"></i> favorito <span id="numerito" class="numerito">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!--carrusel-->
+        <div class="carusel-portada">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./img/carusel/foto07.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./img/carusel/foto03.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/carusel/foto06.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/carusel/foto05.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/carusel/foto01.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/carusel/foto08.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/carusel/foto09.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="text-block-imagen">
+                <img class="logo-notebook" src="./img/logo/logo-web.png" alt="logo trabajos en madera">
+            </div>
+        </div>
+        <!--carrusel-->
+
+        <!--inicio suscripcion-->
+        <div class="grid-suscripcion ">
+            <div class="suscrip-info-promocion">
+                <h2 class="suscrip-text-blanco">Suscríbete para un </h2>
+                <h1 class="suscrip-text-color">25% de descuento</h1>
+                <h2 class="suscrip-text-blanco">En todos nuestros nuevos
+                    <br>
+                    productos
+                </h2>
+            </div>
+            <div class="grid-suscripcion-email ">
+                <form action="https://formspree.io/f/xjkvwkwp" method="POST">
+                    <div class="form-floating mb-3">
+                        <input type="email" name="email" class="form-control" id="floatingInput"
+                            placeholder="name@example.com">
+                        <label for="floatingInput">Ingrese su correo..</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <button type="submit" class="btn btn-secondary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--fin suscripcion-->
+
+        <h2 class="titulo-principal" id="titulo-principal"></h2>
+        <div id="contenedor-productos" class="contenedor-productos">
+            <!-- Esto se va a rellenar con JS-->
+        </div>
+    </main>
+
+    <footer class="grid-footer">
+        <div class="footer-menu-logo">
+            <a href="#"><img src="./img/logo/logo-letra-blanca.png" alt="logo trabajos en madera"></a>
+        </div>
+        <div class="footer-menu-opciones">
+            <a href="#" class="menu-footer-item">INICIO</a>
+            <a href="producto.html" class="menu-footer-item">PRODUCTOS</a>
+            <a href="contacto.html" class="menu-footer-item">CONTACTO</a>
+        </div>
+        </div>
+        <div class="derechos-autor">
+            <h6> All rights reserved &copy; 2024 Company Luis Godoy.</h6>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/promocion.js"></script>
+    <script src="./js/nav_script.js"></script>
+    <script src="./js/carrito.js"></script>
+</body>
+
+</html>
