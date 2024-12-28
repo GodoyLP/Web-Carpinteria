@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+    --clr-main: grey;
+    --clr-main-light: #EA7126;
+    --clr-white: #ececec;
+    --clr-gray: #e2e2e2;
+    --clr-red: #40240E;
+}
+
+
+/** CARRITO **/
+
+.boton-carrito {
+    margin-top: 2rem;
+
+}
+
+
+.contenedor-carrito {
+    margin-top: 8em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.carrito-vacio,
+.carrito-comprado {
+    color: var(--clr-main);
+}
+
+.carrito-productos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.carrito-producto {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--clr-gray);
+    color: var(--clr-main);
+    padding: .5rem;
+    padding-right: 1.5rem;
+    border-radius: 1rem;
+}
+
+.carrito-producto-imagen {
+    width: 4rem;
+    border-radius: 1rem;
+}
+
+.carrito-producto small {
+    font-size: .75rem;
+}
+
+.carrito-producto-eliminar {
+    width: 1rem;
+    border: 0;
+    background-color: transparent;
+    color: var(--clr-red);
+    cursor: pointer;
+}
+
+.carrito-acciones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carrito-acciones-vaciar {
+    border: 0;
+    background-color: var(--clr-gray);
+    padding: 1rem;
+    border-radius: 1rem;
+    color: var(--clr-main);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.carrito-acciones-derecha {
+    display: flex;
+}
+
+.carrito-acciones-total {
+    display: flex;
+    background-color: var(--clr-gray);
+    padding: 1rem;
+    color: var(--clr-main);
+    text-transform: uppercase;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    gap: 1rem;
+}
+
+.carrito-acciones-comprar {
+    border: 0;
+    background-color: var(--clr-main);
+    padding: 1rem;
+    color: var(--clr-white);
+    text-transform: uppercase;
+    cursor: pointer;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.header-mobile {
+    display: none;
+    background-color: var(--clr-white);
+}
+
+.close-menu {
+    display: none;
+}
+
+.disabled {
+    display: none;
+}
+
+.carrito-pedido-compra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+    background-color: var(--clr-red);
+}
+
+/*** MEDIA QUERIES ***/
+
+@media only screen and (max-width: 359px) {
+    .contenedor-productos {
+        grid-template-columns: 1fr;
+    }
+
+    .carrito {
+        /* display: none;*/
+        margin-top: 50em;
+        width: 80px;
+    }
+
+    .carrito-pedido-compra {
+        margin-top: 2px;
+        
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+   
+
+    .header-mobile {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .header-mobile .logo {
+        color: var(--clr-gray);
+        
+    }
+
+    .open-menu,
+    .close-menu {
+        background-color: transparent;
+        color: var(--clr-gray);
+        border: 0;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .close-menu {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .carrito {
+        /*  display: none;*/
+        margin-top: 0em;
+        width: 80px;
+    }
+
+    .carrito-producto {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: .5rem;
+    }
+
+    .carrito-producto-subtotal {
+        display: none;
+    }
+
+    .carrito-acciones {
+        flex-wrap: wrap;
+        row-gap: 1rem;
+    }
+
+    .carrito-pedido-compra {
+        margin-top: 2px;
+        height: 4em;;
+        
+    }
+
+
+
+}
+
+
+/*tablets*/
+@media only screen and (min-width: 768px) and (max-width:991px) {
+
+    .contenedor-productos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .carrito {
+        /*    display: none;*/
+        margin-top: 0em;
+        width: 80px;
+    }
+
+    .carrito-pedido-compra {
+        margin-top: 0.5em;
+        height: 4em;
+    }
+
+
+}
+
+
+/*labtops*/
+@media only screen and (min-width: 992px) and (max-width:1199px) {
+    .contenedor-productos {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .carrito {
+        /*    display: none;*/
+        margin-top: 0em;
+        width: 80px;
+    }
+
+
+}
+
+
+
+/*Desktops*/
+@media only screen and (min-width: 1200px) {
+
+}
+

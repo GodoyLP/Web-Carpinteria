@@ -1,0 +1,513 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+/*boton ingreso*/
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: gray;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-color: 2px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+
+
+.ingresobtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: grey;
+  border-radius: 10px;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  border-radius: 10px;
+}
+
+.registrolbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: blue;
+  border-radius: 10px;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+  width: 80%;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container_login,
+.container_login_btn {
+  padding: 16px;
+  width: 100%;
+}
+
+.modal-content.animate {
+  background-color: #EBEBEB;
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 50%;
+  /* Full width */
+  height: 50%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 100%;
+  /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+
+/*navar menu*/
+.table-desktops {
+  overflow: hidden;
+  background-color: gray;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.table-desktops a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.table-desktops a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.table-desktops a.ingreso {
+  float: right;
+}
+
+/*men desplgable*/
+.menuDesple {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.menuDesple-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+
+}
+
+.menuDesple a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.menuDesple a:hover,
+.menuDesple a:focus {
+  color: #f1f1f1;
+}
+
+.menuDesple .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/*carusel*/
+.carusel-portada {
+  position: relative;
+  justify-items: center;
+  margin-top: 2px;
+}
+
+.carousel {
+  width: 75%;
+  height: 55%;
+}
+
+.text-block-imagen {
+  border-radius: 50%;
+  position: absolute;
+  background-color: #f1f1f1;
+  align-items: center;
+  top: 10em;
+  right: 32em;
+}
+
+
+/*titulo promocion*/
+.titulo-promocion {
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  margin-top: 7px;
+  background-color: #818181;
+}
+
+/*footer*/
+.grid-footer {
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+}
+
+.footer-menu-logo {
+  flex: 50%;
+  text-align: center;
+  background-color: black;
+  padding: 5px;
+}
+
+.footer-menu-opciones a {
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.footer-menu-opciones {
+  align-content: center;
+  text-align: center;
+  align-items: center;
+  flex: 50%;
+  background-color: black;
+  padding: 3em;
+  font-size: x-large;
+}
+
+.derechos-autor {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background: black;
+  color: #ffffff;
+}
+
+/*suscricopn footer*/
+.grid-suscripcion {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #9D4C19;
+  margin-top: 5px;
+  border-radius: 20px;
+}
+
+.suscrip-info-promocion {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.grid-suscripcion-email {
+  display: grid;
+  grid-template-columns: 70% 20%;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.suscrip-text-color {
+  color: #ffdd00;
+}
+
+.suscrip-text-blanco {
+  color: white;
+}
+
+
+
+/*mobile antiguos*/
+@media only screen and (max-width: 359px) {
+  .carusel-portada
+  {margin-top: 50em;
+  
+  }
+
+  .login,
+  .table-desktops {
+    display: none;
+  }
+
+  .carousel {
+    width: 110%;
+    height: 1000%;
+  }
+
+  .carusel-portada {
+    margin-top: 2px;
+    padding: 0%;
+  }
+
+  .carousel-inner {
+    margin: 0%;
+    margin: 1px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .text-block-imagen {
+    position: absolute;
+    width: 0px;
+    height: opx;
+    top: 2em;
+    right: 19em;
+  }
+
+  .logo-notebook {
+    display: none;
+  }
+}
+
+
+/*mobile*/
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+
+  /*login pass*/
+  span.psw {
+    display: block;
+    float: none;
+  }
+
+  .cancelbtn {
+    width: 100%;
+  }
+
+  /*menu desplegable*/
+  .menuDesple {
+    font-size: 20px
+  }
+
+  .menuDesple .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+
+  .table-desktops {
+    display: none;
+  }
+
+  .carousel {
+    width: 110%;
+    height: 1000%;
+
+  }
+
+  .carousel-item {
+    border-radius: 10px;
+  }
+
+
+  .logo-notebook {
+    display: none;
+  }
+
+  .text-block-imagen {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: 2em;
+    right: 60em;
+  }
+}
+
+/*tablets*/
+@media only screen and (min-width: 768px) and (max-width:991px) {
+  .mobile {
+    display: none;
+  }
+
+
+  .text-block-imagen {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: -2em;
+    right: 38em;
+  }
+
+
+}
+
+/*labtops*/
+@media only screen and (min-width: 992px) and (max-width:1199px) {
+  body {
+    padding-left: 20px;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .text-block-imagen {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: -2em;
+    right: 50em;
+  }
+
+}
+
+/*Desktops*/
+@media only screen and (min-width: 1200px) {
+  .mobile {
+    display: none;
+  }
+
+  /*login pass*/
+  .modal-content {
+    width: 40%;
+  }
+
+  .span.psw {
+    display: block;
+    float: none;
+  }
+
+  .cancelbtn {
+    width: 15%;
+  }
+
+
+  .text-block-imagen {
+    position: absolute;
+    background-color: #ccc;
+    width: 5px;
+    height: 5px;
+    top: 2em;
+    right: 60em;
+  }
+
+
+
+
+}

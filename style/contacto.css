@@ -1,0 +1,68 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+}
+
+.flex-item-left {
+    background-color: #f1f1f1;
+    padding: 10px;
+    flex: 50%;
+}
+
+.flex-item-right {
+    background-color: #f1f1f1;
+    padding: 10px;
+    flex: 50%;
+}
+
+.carrusel-pago {
+    margin-left: 3em;
+}
+
+
+
+/*mobile antiguos*/
+@media only screen and (max-width: 359px) {
+
+    .flex-item-right,
+    .flex-item-left {
+        flex: 100%;
+    }
+
+    .carrusel-pago{
+        margin-left:0em ;
+    }
+}
+
+
+/*mobile*/
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+
+    .flex-item-right,
+    .flex-item-left {
+        flex: 100%;
+    }
+    .carrusel-pago{
+        margin-left:0em ;
+    }
+
+}
+
+/*tablets*/
+@media only screen and (min-width: 768px) and (max-width:991px) {
+
+    .flex-item-right,
+    .flex-item-left {
+        flex: 100%;
+    }
+}
+
+/*labtops*/
+@media only screen and (min-width: 992px) and (max-width:1199px) {}
+
+/*Desktops*/
+@media only screen and (min-width: 1200px) {
+    
+}
